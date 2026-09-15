@@ -1,0 +1,5 @@
+curl.exe -s -X POST http://localhost:5000/register -H "Content-Type: application/json" -d "@register.json"
+curl.exe -s -c cookies.txt -X POST http://localhost:5000/customer/login -H "Content-Type: application/json" -d "@login.json"
+curl.exe -s -b cookies.txt -X PUT "http://localhost:5000/customer/auth/review/1?review=Great%20book"
+curl.exe -s -b cookies.txt -X DELETE "http://localhost:5000/customer/auth/review/1"
+{"message":"User successfully registered. Now you can login"}{"message":"User successfully logged in","accessToken":"..."}{"message":"Review successfully added/updated","reviews":{"sayali":"Great book"}}{"message":"Review successfully deleted","reviews":{}}
