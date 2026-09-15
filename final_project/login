@@ -1,0 +1,2 @@
+curl.exe -s -X POST http://localhost:5000/customer/login -H "Content-Type: application/json" -d "@login.json"
+{"message":"User successfully logged in","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNheWFsaSIsImlhdCI6MTc4OTQ2MjU1MSwiZXhwIjoxNzg5NDY2MTUxfQ.D1VL2-Jwepou5SgxBH0zkCZAFieygMj18T-ZxDIS1r0"}
